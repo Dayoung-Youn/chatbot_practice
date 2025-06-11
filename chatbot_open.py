@@ -21,7 +21,7 @@ print(document[5].page_content[:5000])
 import os
 os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
-#from langchain_community.embeddings import FAISS
+from langchain_community.embeddings import FAISS
 from langchain_community.embeddings import OpenAIEmbeddings
 
 embeddings = OpenAIEmbeddings()
